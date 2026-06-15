@@ -9,6 +9,15 @@ Canvas "office" where clickable characters are real AI agents, each backed by an
 > guide. It's written so you can hand the whole thing to an AI assistant (e.g. Opus) and
 > have it walk you through, including the pieces you must fill in by hand (tokens, agents).
 
+## 🎥 Demo video
+
+A screen recording of the live demo in action:
+
+https://github.com/bacdemokr/bac-snu-demo/raw/main/assets/demo.webm
+
+> The video is also in the repo at [`assets/demo.webm`](./assets/demo.webm) (~59 MB, WebM).
+> On the GitHub README it should play inline; otherwise click the link to download/play it.
+
 ## What's in the demo
 
 Clickable agents on the canvas (`app/server.js` → `AGENTS`):
