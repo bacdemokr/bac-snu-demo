@@ -1,0 +1,22 @@
+{
+  "repo": "bacdemokr/NemoClaw",
+  "indexedAt": "2026-06-04",
+  "defaultBranch": "main",
+  "summary": "NemoClaw is a TypeScript/Node project (an OpenClaw-style agent gateway). Real source lives in src/ (commands, ext, lib, nemoclaw.ts), tests in test/, build via package.json + vitest + biome. It is a large, real codebase.",
+  "topLevel": [
+    ".agents", ".claude", ".github", "agents", "bin", "ci", "docs", "fern",
+    "nemoclaw", "nemoclaw-blueprint", "schemas", "scripts", "skills", "src",
+    "test", "tools", "package.json", "README.md", "AGENTS.md", "vitest.config.ts"
+  ],
+  "src": ["src/commands/", "src/ext/", "src/lib/", "src/nemoclaw.ts"],
+  "language": "TypeScript / Node",
+  "demoStrategy": {
+    "note": "For a FAST, always-succeeding live demo, the Dev subagent must NOT touch the real complex TS source (build/test would break, slow review). Instead, every feature request is implemented as a small, self-contained file under the dedicated demo-features/ directory, plus an entry in demo-features/README.md. This keeps commits instant, conflict-free, and guaranteed to merge.",
+    "targetDir": "demo-features/",
+    "branchConvention": "bacdemo/<slug>-YYYYMMDD-HHMM",
+    "addFile": "demo-features/<slug>.(md|js|ts) — a tiny standalone module or spec for the requested feature",
+    "indexFile": "demo-features/README.md — append a one-line catalog entry linking the new feature",
+    "prBase": "main",
+    "reviewConstraint": "Same-account PRs cannot be formally APPROVED by bacdemokr; use COMMENT event with verdict in body if a review step is shown."
+  }
+}
